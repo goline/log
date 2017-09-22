@@ -1,12 +1,5 @@
 package log
 
-const (
-	LOG_ERROR = "ERROR"
-	LOG_INFO  = "INFO"
-	LOG_DEBUG = "DEBUG"
-	LOG_WARN  = "WARN"
-)
-
 // Logger controls log
 type Logger interface {
 	LogWriter
