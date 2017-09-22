@@ -3,6 +3,8 @@ package log
 import (
 	"fmt"
 	"time"
+
+	"github.com/goline/errors"
 )
 
 type ConsoleLogger struct{}
@@ -15,17 +17,17 @@ func (l *ConsoleLogger) Write(level string, message string, args ...interface{})
 }
 
 func (l *ConsoleLogger) Error(message string, args ...interface{}) error {
-	return l.Write(LOG_ERROR, message, args...)
+	return l.Write(errors.LEVEL_ERROR, message, args...)
 }
 
 func (l *ConsoleLogger) Info(message string, args ...interface{}) error {
-	return l.Write(LOG_INFO, message, args...)
+	return l.Write(errors.LEVEL_INFO, message, args...)
 }
 
 func (l *ConsoleLogger) Debug(message string, args ...interface{}) error {
-	return l.Write(LOG_DEBUG, message, args...)
+	return l.Write(errors.LEVEL_DEBUG, message, args...)
 }
 
 func (l *ConsoleLogger) Warn(message string, args ...interface{}) error {
-	return l.Write(LOG_WARN, message, args...)
+	return l.Write(errors.LEVEL_WARN, message, args...)
 }

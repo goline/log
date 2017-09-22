@@ -1,0 +1,6 @@
+hash: d72dd9fd3ee1fde8b21ed7167ab5e6c030d970ea178f9663be045ba8cc4dc931
+updated: 2017-09-22T22:06:59.446782029+07:00
+imports:
+- name: github.com/goline/errors
+  version: b2371c4c8b19799de259df6fde97621d1b42a059
+testImports: []
