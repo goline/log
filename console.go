@@ -7,7 +7,7 @@ import (
 	"github.com/goline/errors"
 )
 
-type ConsoleLogger struct{}
+type ConsoleLogger struct {}
 
 func (l *ConsoleLogger) Write(level string, message string, args ...interface{}) error {
 	now := time.Now().Format(time.RFC3339)
