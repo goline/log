@@ -1,8 +1,8 @@
 package log
 
 const (
-	LEVEL_ERROR = "error"
-	LEVEL_DEBUG = "debug"
-	LEVEL_INFO  = "info"
-	LEVEL_WARN  = "warn"
+	LEVEL_ERROR = "ERROR"
+	LEVEL_DEBUG = "DEBUG"
+	LEVEL_INFO  = "INFO"
+	LEVEL_WARN  = "WARN"
 )
